@@ -139,11 +139,11 @@ module.exports = function (context) {
             if (typeof xcodeProject.getBuildProperty('SWIFT_VERSION', buildConfig.name) === 'undefined') {
                 console.log('Use Legacy Swift Language Version');
               //if (config.getPreference('UseLegacySwiftLanguageVersion', 'ios')) {
-                xcodeProject.updateBuildProperty('SWIFT_VERSION', '2.3', buildConfig.name);
-                console.log('Use legacy Swift language version', buildConfig.name);
+              //  xcodeProject.updateBuildProperty('SWIFT_VERSION', '2.3', buildConfig.name);
+              //  console.log('Use legacy Swift language version', buildConfig.name);
               //} else {
-              //  xcodeProject.updateBuildProperty('SWIFT_VERSION', '3.0', buildConfig.name);
-              //  console.log('Update SWIFT version to 3.0', buildConfig.name);
+                xcodeProject.updateBuildProperty('SWIFT_VERSION', '3.0', buildConfig.name);
+                console.log('Update SWIFT version to 3.0', buildConfig.name);
               //}
             }
 
