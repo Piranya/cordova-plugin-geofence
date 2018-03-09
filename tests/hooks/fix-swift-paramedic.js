@@ -42,9 +42,9 @@ module.exports = function(context) {
 
         for (config in configurations) {
             buildSettings = configurations[config].buildSettings;
-            buildSettings['SWIFT_VERSION'] = '2.3'
+            buildSettings['SWIFT_VERSION'] = '3.0'
         }
-        console.log('IOS project Swift Version changed to 2.3 ...');
+        console.log('IOS project Swift Version changed to 3.0 ...');
 
         projectFile.write();
     }
